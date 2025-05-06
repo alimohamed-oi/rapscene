@@ -1,59 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; 
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
 }
 
-h1, h2, h3 {
-    color: #2c3e50; 
-    text-align: center; 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 1rem 5%;
+    margin-bottom: 2rem;
 }
 
-h1 {
-    font-size: 2.5em; 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-h2 {
-    font-size: 2em;
+nav a:hover {
+    background-color: #3498db;
 }
 
-body > h2, body > p, body > a {
-    background-color: white;
-    border: 2px solid #3498db; 
-    border-radius: 8px; 
+.main-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 15px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-sizing: border-box; 
 }
 
-img {
-    display: block;
-    margin: 0 auto; 
+.blog-list {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.blog-content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+h1 { font-size: 2.8rem; color: #2c3e50; }
+h2 { font-size: 2.2rem; color: #34495e; }
+h3 { font-size: 1.8rem; color: #34495e; }
+p { font-size: 1.1rem; line-height: 1.8; }
 
 table {
-    margin: 20px auto; 
+    width: 100%;
     border-collapse: collapse;
-    background-color: white;
+    margin: 2rem 0;
+    background: white;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
+    text-align: left;
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 button {
-    background-color: #3498db;
+    background: #3498db;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
 }

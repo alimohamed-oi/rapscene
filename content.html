@@ -1,53 +1,36 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title>Contact zone</title>
-        <link rel="stylesheet"  href="style.css">
-        <link rel="icon" type="image" href="photos/logo.jpg">
-        <link rel="stylesheet" href="flex.css">
-    </head>
-    <body>
-        <h2>Contact</h2>
-    <form align="center">
-        <label for="fname">Your Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="emil" name="email"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password"><br>
-        <label for="message">Enter you message:</label><br>
-        <input type="<textarea name="message" id="message" rows="5" cols="12" required></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-    <h3>Contact information</h3>
-    <table cellspacing="20px">
-        <tr>
-            <th>Day</th>
-            <th>Opening time </th>
-            <th>Closing time</th>
-        </tr>
-        <tr>
-            <th>Monday </th>
-            <th>9:00 AM</th>
-            <th>5:00 PM </th>
-        </tr>
-        <tr>
-            <th>Tuesday </th>
-            <th>9:00 AM</th>
-            <th>5:00 PM </th>
-        </tr>
-        <tr>
-            <th>Wednesday </th>
-            <th>9:00 AM</th>
-            <th>5:00 PM </th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th>contact more in <a href="mailto:alimohammedghazy@gmail.com">Test@gmail.com</a> </th>
-        </tr>
-        <tr align="center"><th><a href="file:///C:/Users/m3180/html/Homepage.html"><button a>Home</button></a></th></tr>
-    </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="content.html">Contact</a>
+    </nav>
 
-    </body>
+    <div class="main-container">
+        <form>
+            <h2>Contact with us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+            <table>
+                <tr>
+                    <th>contact more in <a href="mailto:alimohammedghazy@gmail.com">HELP@gmail.com</a> </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
 </html>
