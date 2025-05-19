@@ -107,3 +107,93 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack layout vertically */
+  .blog-posts {
+    flex-direction: column;
+  }
+
+  /* Typography adjustments */
+  h1 {
+    font-size: 2rem;
+  }
+
+  .blog-posts article h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  /* Spacing adjustments */
+  header {
+    padding: 0.75rem;
+  }
+
+  .blog-posts article {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop-specific adjustments */
+  .blog-posts article {
+    flex: 0 1 calc(33% - 2rem);
+  }
+}
+/* Base styles */
+body {
+  background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+  min-height: 100vh;
+}
+
+header {
+  background: #2c3e50;
+  padding: 1rem;
+}
+
+footer {
+  background: #34495e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Navigation links */
+nav a {
+  color: #ecf0f1;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Blog post styling */
+.blog-posts article h2 {
+  color: #2c3e50;
+}
+
+.blog-posts article p {
+  color: #7f8c8d;
+}
+
+/* Accessibility verification */
+@media (prefers-contrast: more) {
+  .blog-posts article h2 {
+    color: #000;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+}
